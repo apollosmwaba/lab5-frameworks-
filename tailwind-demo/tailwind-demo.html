@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apollos Tailwind CSS Demo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+    <!-- Card Layout -->
+    <div class="max-w-4xl mx-auto">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">TAILWIND CSS Card Layout</h1>
+        
+        <!-- Card Grid - Responsive: 1 column on mobile, 2 columns on medium screens and up -->
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="images/2.jpg" alt="Nature" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Exploring Nature</h2>
+                    <p class="text-gray-600 mb-4">Discover the beauty of natural landscapes and wildlife in this immersive expedition.</p>
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition duration-300">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="images/1.jpg" alt="Technology" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Tech Innovations</h2>
+                    <p class="text-gray-600 mb-4">Stay on the cutting edge with the latest technological advancements reshaping our world.</p>
+                    <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded transition duration-300">
+                        Discover
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Card 3 (visible on larger screens in next row) -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="images/c.jpg" alt="Food" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Culinary Delights</h2>
+                    <p class="text-gray-600 mb-4">Explore mouthwatering cuisines from around the globe that will tantalize your taste buds.</p>
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded transition duration-300">
+                        Explore
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Card 4 (visible on larger screens in next row) -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="images/4.webp " alt="Travel" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">Adventure Awaits</h2>
+                    <p class="text-gray-600 mb-4">Find your next destination with our curated list of breathtaking locations around the world.</p>
+                    <button class="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-2 px-4 rounded transition duration-300">
+                        Plan Now
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Responsive Feature Section -->
+        <div class="mt-12 bg-white rounded-lg shadow-lg p-6">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Why Choose Tailwind CSS?</h2>
+            <div class="flex flex-col md:flex-row gap-4">
+                <div class="flex-1 p-4 bg-gray-50 rounded-md">
+                    <h3 class="font-bold text-lg mb-2">Utility-First</h3>
+                    <p>Build custom designs without leaving your HTML using utility classes.</p>
+                </div>
+                <div class="flex-1 p-4 bg-gray-50 rounded-md">
+                    <h3 class="font-bold text-lg mb-2">Responsive</h3>
+                    <p>Fully responsive design system built right into the core framework.</p>
+                </div>
+                <div class="flex-1 p-4 bg-gray-50 rounded-md">
+                    <h3 class="font-bold text-lg mb-2">Customizable</h3>
+                    <p>Tailwind can be extended to match your brand's design system.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
